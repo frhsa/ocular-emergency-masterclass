@@ -11,8 +11,9 @@
 }
 
 /* ===== HERO SECTION ===== */
+/* ===== HERO SECTION ===== */
 .hero {
-    background: linear-gradient(135deg, #1B1F3B, #FFB6C1, #F5F5DC, #FFFFFF);
+    background: linear-gradient(135deg, #1B1F3B, #FFB6C1, #FFFFFF, #1B1F3B);
     background-size: 400% 400%;
     animation: gradientShift 18s ease infinite;
     padding-top: 120px;
@@ -31,70 +32,49 @@
     position: absolute;
     top: 0; left: 0;
     width: 100%; height: 100%;
-    background: radial-gradient(circle at center, rgba(255,255,255,0.15), rgba(0,0,0,0.3));
+    background: radial-gradient(circle at center, rgba(27,31,59,0.4), rgba(0,0,0,0.6));
     z-index: 0;
 }
-/* Typing cursor */
-.cursor {
-    display: inline-block;
-    color: #FFB6C1;
-    font-weight: bold;
-    animation: blink 0.7s infinite;
-}
-@keyframes blink {
-    0%, 50% { opacity: 1; }
-    51%, 100% { opacity: 0; }
-}
+
 /* Hero Title Glow */
 .hero-title {
-    background: linear-gradient(90deg, #FFFFFF, #F5F5DC, #FFB6C1);
+    background: linear-gradient(90deg, #FFFFFF, #FFB6C1);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-shadow:
-      0 0 20px rgba(255,182,193,0.9),
-      0 0 40px rgba(245,245,220,0.8),
-      0 0 60px rgba(255,255,255,0.7);
+      0 0 10px rgba(255,182,193,1),
+      0 0 25px rgba(27,31,59,0.9),
+      0 0 35px rgba(255,255,255,0.8);
+    font-weight: 800;
     position: relative;
     z-index: 1;
 }
-/* Countdown */
+
+/* Countdown with glow */
 .countdown-digital {
     display: inline-block;
     font-family: 'Courier New', monospace;
     font-size: 2rem;
     font-weight: bold;
-    color: #F5F5DC; /* Cream text */
+    color: #FFFFFF;
     padding: 14px 32px;
     border: 2px solid #FFB6C1;
     border-radius: 12px;
-    background: rgba(27,31,59,0.9); /* Navy */
+    background: rgba(27,31,59,0.95);
     box-shadow:
       0 0 20px rgba(255,182,193,0.8),
-      0 0 40px rgba(255,255,255,0.7);
+      0 0 30px rgba(27,31,59,0.8);
     letter-spacing: 3px;
     position: relative;
     z-index: 1;
 }
 
-/* ===== PARTICLES ===== */
-#particles {
-    position: absolute;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
-    z-index: 0;
-    overflow: hidden;
-}
-.particle {
-    position: absolute;
-    width: 8px; height: 8px;
-    border-radius: 50%;
-    opacity: 0.9;
-    animation: float linear infinite, glowPulse 3s ease-in-out infinite;
-}
+/* Particles */
 .particle:nth-child(4n)   { background: #FFB6C1; }  /* pink */
-.particle:nth-child(4n+1) { background: #F5F5DC; }  /* cream */
-.particle:nth-child(4n+2) { background: #FFFFFF; }  /* white */
+.particle:nth-child(4n+1) { background: #FFFFFF; }  /* white */
+.particle:nth-child(4n+2) { background: #F5F5DC; }  /* cream */
 .particle:nth-child(4n+3) { background: #1B1F3B; }  /* navy */
+
 @keyframes float {
     from { transform: translateY(100vh) scale(0.5); opacity: 0.8; }
     to   { transform: translateY(-10vh) scale(1); opacity: 0; }
@@ -306,4 +286,43 @@ html {
     background: #FFF;
     border: 3px solid #FFB6C1;
   }
-  
+
+  /* Download PDF Button */
+.btn-download {
+    display: inline-block;
+    background: linear-gradient(90deg, #FFB6C1, #1B1F3B);
+    color: #fff;
+    font-weight: bold;
+    padding: 12px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: 0.3s;
+    box-shadow: 0 0 12px rgba(255,182,193,0.5);
+  }
+  .btn-download:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(27,31,59,0.6), 0 0 25px rgba(255,182,193,0.7);
+  }
+
+  /* Title lebih jelas */
+.hero-title-dark {
+    font-size: 2.2rem;
+    font-weight: 700;
+    background: linear-gradient(90deg, #1B1F3B, #FFB6C1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 8px rgba(255,182,193,0.7), 0 0 12px rgba(27,31,59,0.6);
+  }
+
+   .sponsor-logo {
+    height: 80px;
+    width: auto;
+    object-fit: contain;
+  }
+
+  #sponsor .d-flex {
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }

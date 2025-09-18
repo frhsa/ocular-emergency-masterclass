@@ -26,29 +26,39 @@
           <li class="nav-item"><a class="nav-link" href="#speakers">Speakers</a></li>
           <li class="nav-item"><a class="nav-link" href="#venue">Venue</a></li>
           <li class="nav-item"><a class="nav-link" href="#sponsor">Sponsor</a></li>
-          <li class="nav-item"><a class="nav-link" href="#register">Register</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <!-- HERO -->
-  <section class="text-center text-white hero" id="home">
-    <div class="container py-5">
-      <h1 class="display-4 fw-bold">Ocular Emergency Masterclass 2025</h1>
-      <p class="lead">1st BRILL - UKM Collaboration</p>
-      <h3 class="fw-bold">Sept 19, 2025 | 8.00 AM – 5.00 PM</h3>
-      <p class="mt-3">Location: Komune Living & Wellness</p>
-      
-      <!-- Countdown -->
-      <div id="countdown" class="fs-3 fw-bold mt-4"></div>
-    </div>
+ <!-- HERO -->
+<section class="text-center text-white hero" id="home">
+     <!-- Particles container -->
+  <div id="particles"></div>
+
+  <div class="container py-5 position-relative">
+    <h1 class="display-4 fw-bold hero-title">
+        <span id="typed-text"></span><span class="cursor">|</span>
+      </h1>
+    <p class="lead">1st BRILL - UKM Collaboration</p>
+    <h3 class="fw-bold">Sept 19, 2025 | 8.00 AM – 5.00 PM</h3>
+    <p class="mt-3">Location: Komune Living & Wellness</p>
+    <div id="countdown" class="countdown-digital mt-4"></div>
+  </div>
   </section>
 
   <!-- TENTATIVE -->
   <section id="tentative" class="py-5">
     <div class="container">
-      <h2 class="text-center mb-5 hero-title">Programme Tentative</h2>
+        <h2 class="text-center mb-3 hero-title-dark">Programme Tentative</h2>
+
+  
+    <!-- Download PDF -->
+    <div class="text-center mb-5">
+        <a href="files/tentative.pdf" download class="btn-download">
+          📄 Download Full Tentative (PDF)
+        </a>
+      </div>
   
       <div class="timeline">
   
@@ -58,12 +68,12 @@
           <div class="timeline-content">Registration</div>
         </div>
   
-        <!-- Dr Lam -->
+        <!-- Prof Jem -->
         <div class="timeline-item">
           <div class="timeline-time">8:15 – 8:40</div>
           <div class="timeline-content">
-            <strong>Dr. Lam Chenshen</strong><br>
-            Infectious Keratitis
+            <strong>A/P Dr. Jemaima Che Hamzah</strong><br>
+             Diagnostic Algorithm of Acute Angle Glaucoma & Treatment
           </div>
         </div>
   
@@ -76,12 +86,12 @@
           </div>
         </div>
   
-        <!-- Dr Jemaima -->
+        <!-- Dr Ainal -->
         <div class="timeline-item">
           <div class="timeline-time">9:05 – 9:30</div>
           <div class="timeline-content">
-            <strong>A/P Dr. Jemaima Che Hamzah</strong><br>
-            Acute Angle Glaucoma & Treatment
+            <strong>Dr. Ainal Adlin Naffi</strong><br>
+            Curtain Call: Unmasking Rhegmatogenous Retinal Detachment
           </div>
         </div>
   
@@ -89,17 +99,17 @@
         <div class="timeline-item">
           <div class="timeline-time">9:30 – 9:55</div>
           <div class="timeline-content">
-            <strong>A/P Dr. Safinaz Mohd Khialdin</strong><br>
-            The White Reflex: A Small Sign with Big Implications
+            <strong>Dr. Ayesha Mohd Zain</strong><br>
+            Retinal Vascular Accidents & Macular Neovascularisation
           </div>
         </div>
-  
+   
         <!-- Dr Mae-Lynn -->
         <div class="timeline-item">
           <div class="timeline-time">9:55 – 10:20</div>
           <div class="timeline-content">
-            <strong>Prof. Dr. Mae-Lynn C. Bastion</strong><br>
-            Firecracker Injuries & Ocular Perforations
+            <strong>Dr. Niki Ho Wai Wye </strong><br>
+             Emergencies of the Orbit: Cellulitis to Compartment Syndrome 
           </div>
         </div>
   
@@ -112,15 +122,15 @@
         <!-- Opening Ceremony -->
         <div class="timeline-item highlight">
           <div class="timeline-time">10:30 – 12:00</div>
-          <div class="timeline-content">Opening Ceremony & LOI Signing</div>
+          <div class="timeline-content">Opening Ceremony & LOI Signing between BRILL & UKM</div>
         </div>
   
         <!-- Dr Ayesha -->
         <div class="timeline-item">
           <div class="timeline-time">12:10 – 12:35</div>
           <div class="timeline-content">
-            <strong>Dr. Ayesha Mohd Zain</strong><br>
-            Medical Retina: Retinal Vascular Accidents, Macular Neovascularisation
+            <strong>A/P Dr. Safinaz Mohd Khialdin</strong><br>
+            The White Reflex: A Small Sign with Big Implications
           </div>
         </div>
   
@@ -142,8 +152,8 @@
         <div class="timeline-item">
           <div class="timeline-time">2:55 – 3:20</div>
           <div class="timeline-content">
-            <strong>Dr. Niki Ho Wai Wye</strong><br>
-            Emergencies of the Orbit: Cellulitis to Compartment Syndrome
+            <strong>Prof. Dr. Mae-Lynn C. Bastion</strong><br>
+            Firecracker Injuries & Ocular Perforations
           </div>
         </div>
   
@@ -158,8 +168,8 @@
         <div class="timeline-item">
           <div class="timeline-time">3:45 – 4:10</div>
           <div class="timeline-content">
-            <strong>Dr. Ainal Adlin Naffi</strong><br>
-            Ocular Trauma: Posterior Segment Injury
+            <strong>Dr. Lam Chenshen</strong><br>
+            Infectious Keratitis
           </div>
         </div>
   
@@ -200,20 +210,225 @@
       </div>
   
       <!-- Note -->
-      <p class="text-center mt-4"><em>*Note: Each scientific session is followed by a short Kahoot quiz.</em></p>
+      <p class="text-center mt-4"><em>*Note: Each scientific session is followed by a short Quizziz session.</em></p>
     </div>
   </section>
   
 
-  <!-- SPEAKERS (Paste 12 flip cards here from previous code) -->
+  <!-- SPEAKERS -->
   <section class="bg-light py-5" id="speakers">
     <div class="container">
       <h2 class="text-center mb-4">Speakers</h2>
       <div class="row g-4">
-        <!-- 12 speaker cards code goes here -->
+  
+        <!-- 1. Dr. Lam Chenshen -->
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="images/lam.jpg" alt="Dr. Lam Chenshen" class="img-fluid">
+                <h5 class="mt-2">Dr. Lam Chenshen</h5>
+              </div>
+              <div class="flip-card-back">
+                <h5>Dr. Lam Chenshen</h5>
+                <p><strong>Topic:</strong> Infectious Keratitis</p>
+                <p>General ophthalmologist & clinical lecturer. Focus on cornea and anterior segment disease.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- 2. Dr. Mazaya Mahmud -->
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="images/mazaya.jpg" alt="Dr. Mazaya Mahmud" class="img-fluid">
+                <h5 class="mt-2">Dr. Mazaya Mahmud</h5>
+              </div>
+              <div class="flip-card-back">
+                <h5>Dr. Mazaya Mahmud</h5>
+                <p><strong>Topic:</strong> Penetrating Ocular Injury</p>
+                <p>Ophthalmologist & lecturer at UPM. Currently cornea fellow at UKM.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- 3. Prof. Madya Dr. Jemaima -->
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="images/jemaima.jpg" alt="Prof. Madya Dr. Jemaima" class="img-fluid">
+                <h5 class="mt-2">Prof. Madya Dr. Jemaima</h5>
+              </div>
+              <div class="flip-card-back">
+                <h5>Dr. Jemaima Che Hamzah</h5>
+                <p><strong>Topic:</strong> Diagnostic Algorithm of Acute Angle Glaucoma & Treatment</p>
+                <p>Assoc. Prof. & Senior Consultant Ophthalmologist at UKM. PhD from University of Aberdeen.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- 4. Prof. Madya Dr. Safinaz -->
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="images/safinaz.jpg" alt="Prof. Madya Dr. Safinaz" class="img-fluid">
+                <h5 class="mt-2">Prof. Madya Dr. Safinaz</h5>
+              </div>
+              <div class="flip-card-back">
+                <h5>Dr. Safinaz Mohd Khialdin</h5>
+                <p><strong>Topic:</strong> The White Reflex: A Small Sign with Big Implications</p>
+                <p>Consultant Paediatric Ophthalmologist, UKM. Leads Malaysian Advocacy for Myopia Prevention.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- 5. Prof. Dr. Mae-Lynn -->
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="images/mae.jpg" alt="Prof. Dr. Mae-Lynn" class="img-fluid">
+                <h5 class="mt-2">Prof. Dr. Mae-Lynn</h5>
+              </div>
+              <div class="flip-card-back">
+                <h5>Prof. Dr. Mae-Lynn Bastion</h5>
+                <p><strong>Topic:</strong> Firecracker Injuries & Ocular Perforations</p>
+                <p>Professor of Ophthalmology (Vitreoretina), UKM. Fellowship in Singapore, leads Vitreoretinal Services.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- 6. Dr. Ayesha Mohd Zain -->
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="images/ayesha.jpg" alt="Dr. Ayesha Mohd Zain" class="img-fluid">
+                <h5 class="mt-2">Dr. Ayesha Mohd Zain</h5>
+              </div>
+              <div class="flip-card-back">
+                <h5>Dr. Ayesha Mohd Zain</h5>
+                <p><strong>Topic:</strong> Retinal Vascular Accidents & Macular Neovascularisation</p>
+                <p>Consultant Ophthalmologist (Retina & Uveitis), UKM. Fellowship at Royal Victorian Eye & Ear Hospital, Melbourne.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- 7. Dr. Othmaliza -->
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="images/liza.jpg" alt="Dr. Othmaliza" class="img-fluid">
+                <h5 class="mt-2">Dr. Othmaliza</h5>
+              </div>
+              <div class="flip-card-back">
+                <h5>Dr. Othmaliza Othman</h5>
+                <p><strong>Topic:</strong> X-ray and CT Scan in Orbital Emergency</p>
+                <p>Ophthalmologist with subspecialty in oculoplastic. Passionate about teaching.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- 8. Dr. Niki Ho Wai Wye -->
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="images/niki.jpg" alt="Dr. Niki Ho Wai Wye" class="img-fluid">
+                <h5 class="mt-2">Dr. Niki Ho Wai Wye</h5>
+              </div>
+              <div class="flip-card-back">
+                <h5>Dr. Niki Ho Wai Wye</h5>
+                <p><strong>Topic:</strong> Emergencies of the Orbit: Cellulitis to Compartment Syndrome</p>
+                <p>Clinical Specialist & Lecturer at UKM. Active in CME & community eye health.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- 9. Prof. Dato’ Dr. Khairidzan -->
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="images/profk.jpg" alt="Prof. Dato’ Dr. Khairidzan" class="img-fluid">
+                <h5 class="mt-2">Prof. Dato’ Dr. Khairidzan</h5>
+              </div>
+              <div class="flip-card-back">
+                <h5>Prof. Dato’ Dr. Khairidzan</h5>
+                <p><strong>Topic:</strong> Emergencies in Refractive Surgery</p>
+                <p>Professor & Head of Ophthalmology, IIUM.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- 10. Dr. Ainal Adlin -->
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="images/ainal.jpg" alt="Dr. Ainal Adlin" class="img-fluid">
+                <h5 class="mt-2">Dr. Ainal Adlin</h5>
+              </div>
+              <div class="flip-card-back">
+                <h5>Dr. Ainal Adlin Naffi</h5>
+                <p><strong>Topic:</strong> Curtain Call: Unmasking Rhegmatogenous Retinal Detachment</p>
+                <p>Consultant Ophthalmologist, UKM. Fellowship in Vitreoretinal Surgery at Sydney Eye Hospital.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- 11. Dr. Yong Meng Hsien -->
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="images/yong.jpg" alt="Dr. Yong Meng Hsien" class="img-fluid">
+                <h5 class="mt-2">Dr. Yong Meng Hsien</h5>
+              </div>
+              <div class="flip-card-back">
+                <h5>Dr. Yong Meng Hsien</h5>
+                <p><strong>Topic:</strong> Neuro-Ophthalmology Emergency: Beyond the Slit Lamp</p>
+                <p>Consultant Ophthalmologist, Sunway Medical Centre. Special interest in ocular imaging & neuro-ophthalmology.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- 12. Dr. Rona Asnida -->
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="images/rona.jpg" alt="Dr. Rona Asnida" class="img-fluid">
+                <h5 class="mt-2">Dr. Rona Asnida</h5>
+              </div>
+              <div class="flip-card-back">
+                <h5>Dr. Rona Asnida Nasaruddin</h5>
+                <p><strong>Topic:</strong> Post Cataract Endophthalmitis</p>
+                <p>Medical Lecturer, UKM. Expertise in glaucoma, retinal diseases & ocular infections.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+  
       </div>
     </div>
   </section>
+  
 
   <!-- VENUE & PARKING -->
   <section class="container py-5" id="venue">
@@ -226,11 +441,11 @@
     <div class="parking-box p-4 rounded">
       <h4>Parking Information</h4>
       <ul>
-        <li>Basement Parking available</li>
-        <li>Rate: RM5/hour, RM20/day max</li>
-        <li>Nearest MRT: KLCC</li>
-        <li>Shuttle service from nearby hotels</li>
-        <li>OKU access and designated parking available</li>
+        <li>Rate: RM6/entry</li>
+        <li>Park your car at Level 1 to 3 (Any zones) </li>
+        <li> Use the Redzone (Central Lift) to access LEVEL LG</li>
+        <li>Access to Left Door</li>
+        <li>Arrived Event Space. LEVEL LG</li>
       </ul>
     </div>
   </section>
@@ -239,25 +454,17 @@
   <section class="bg-light py-5 text-center" id="sponsor">
     <h2 class="mb-4">Sponsored & Organized By</h2>
     <div class="d-flex flex-wrap justify-content-center gap-4">
-      <img src="https://via.placeholder.com/150x80" alt="Brill Logo">
-      <img src="https://via.placeholder.com/150x80" alt="UKM Logo">
-      <img src="https://via.placeholder.com/150x80" alt="Fakulti Perubatan UKM Logo">
-      <img src="https://via.placeholder.com/150x80" alt="Watan Kita Logo">
+    <img src="images/brill.jpg" alt="Brill Logo" class="sponsor-logo">
+    <img src="images/ukm.jpg" alt="UKM Logo" class="sponsor-logo">
+    <img src="images/faculty.jpg" alt="Fakulti Perubatan UKM Logo" class="sponsor-logo">
+    <img src="images/watan.jpg" alt="Watan Kita Logo" class="sponsor-logo">
     </div>
   </section>
 
-  <!-- REGISTER -->
-  <section class="text-center py-5 register-section" id="register">
-    <h2 class="text-white mb-4">Register Now</h2>
-    <a href="https://forms.gle/xxxxxxx" target="_blank" class="btn btn-lg register-btn">Register via Google Form</a>
-    <div class="mt-3">
-      <img src="https://via.placeholder.com/150" alt="QR Code">
-    </div>
-  </section>
 
   <!-- FOOTER -->
   <footer class="text-center py-3 text-white">
-    © 2025 Ocular Masterclass | All Rights Reserved
+    © 2025 Ocular Masterclass | All Rights Reserved | Developed by Farisha 
   </footer>
 
   <!-- Bootstrap JS -->

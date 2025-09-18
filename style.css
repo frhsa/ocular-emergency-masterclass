@@ -40,6 +40,7 @@
 .hero-title {
     background: linear-gradient(90deg, #FFFFFF, #FFB6C1);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     text-shadow:
       0 0 10px rgba(255,182,193,1),
@@ -310,6 +311,7 @@ html {
     font-weight: 700;
     background: linear-gradient(90deg, #1B1F3B, #FFB6C1);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     text-shadow: 0 0 8px rgba(255,182,193,0.7), 0 0 12px rgba(27,31,59,0.6);
   }
